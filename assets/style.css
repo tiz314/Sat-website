@@ -1,0 +1,60 @@
+*{
+    scroll-behavior: smooth;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body{
+    background-color: #253237;
+}
+
+.navbar{
+    min-height: 5vh;
+
+}
+
+#titleNumber{
+    color: #6fffe9;
+}
+
+#login:hover{
+    background-color: #e0fbfc;
+    color: #253237;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+main {
+    min-height: calc(100vh);
+    background-image: url(./media/desktop-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    margin-left: 8vw;
+    color: #e0fbfc;
+}
+
+.title h1{
+    font-size: 8rem;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+.title h3{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+      transform: translateY(+20%);
+  
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
