@@ -1,2 +1,2 @@
 # Sat-website
-Hypothetical CubeSat manufacturer website 🛰️📡�
+Hypothetical CubeSat manufacturer website 🛰️📡
