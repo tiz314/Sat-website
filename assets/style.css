@@ -9,22 +9,15 @@ body{
 
 .navbar{
     min-height: 5vh;
-
 }
 
 #titleNumber{
     color: #6fffe9;
 }
 
-#login:hover{
-    background-color: #e0fbfc;
-    color: #253237;
-    border-radius: 5px;
-    transition: 0.5s;
-}
 
 main {
-    min-height: calc(100vh);
+    min-height: 100vh;
     background-image: url(./media/desktop-wallpaper.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -47,6 +40,105 @@ main {
     animation-duration: 2s;
 }
 
+#secondHome p{
+    color: #e0fbfc;
+    font-size: 1.4rem;
+    text-align: justify;
+
+}
+
+#secondHome img{
+    width: 25rem;
+}
+
+#cube2{
+    width: 20rem;
+}
+
+#launched, #orders{
+    color: #6fffe9;
+}
+
+.data{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e0fbfc;
+}
+
+#orderNow{
+    padding: 20px;
+    background-color: #6fffe9;
+    color: #253237;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.8s;
+    border-radius: 4px;
+}
+
+#orderNow:hover, footer a:hover{
+    background-color: #253237;
+    color: #6fffe9;
+    border-color: #6fffe9;
+    transition: 0.5s;
+}
+
+#order{
+    color: #6fffe9;
+    text-decoration: none;
+    transition: 0.8s;
+    border-radius: 4px;
+}
+
+#order:hover{
+    background-color: #6fffe9;
+    color: #253237;
+    transition: 0.5s;
+    padding: 4px;
+}
+
+footer{
+    padding-top: 8rem;
+}
+
+footer, footer a, p, p a{
+    text-decoration: none;
+    color: #e0fbfc;
+}
+
+p a:hover{
+    color: #6fffe9;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+#githubLogo{
+    width: 2rem;
+}
+
+.main{
+    min-height: 100vh;
+}
+
+#aboutLogo{
+    width: 30rem;
+    margin-top: 5vh;
+}
+
+#infoAbout p{
+    margin-top: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: justify;
+}
+
+.mainProducts{
+    min-height: 30vh;
+    color: #e0fbfc;
+}
+
 @keyframes fadeIn{
     0%{
       opacity: 0;
@@ -58,3 +150,172 @@ main {
       transform: translateY(0%);
     }
 }
+
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: #6fffe9;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+@-webkit-keyframes arrow{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; 
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; 
+}
+
+/* Media queries for reponsive */
+
+@media screen and (max-width: 900px) {
+    #infoAbout p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }    
+}
+
+
+/* Login form */
+#loginForm{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/* Bordered form */
+form {
+    color: #e0fbfc;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #6fffe9;
+    color: #253237;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+    display: block;
+    float: none;
+    }
+    .cancelbtn {
+    width: 100%;
+    }
+} 
+    
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: #6fffe9;
+color: #253237;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+border-radius: 5px;
+padding: 20px;
+} 

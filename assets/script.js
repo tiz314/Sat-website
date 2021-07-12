@@ -11,10 +11,14 @@ function animateValue(obj, start, end, duration) {
     window.requestAnimationFrame(step);
 }
 
-const obj = document.getElementById("value");
-satLaunched = 1314;
-newOrders = 4502;
+const launched = document.getElementById("launched");
+const orders = document.getElementById("orders")
+satLaunched = 514;
+newOrders = 984;
 
 
-//animateValue(obj, 0, satLaunched, 4000);
+window.onscroll = function() {
+  animateValue(launched, 0, satLaunched, 4000);
+  animateValue(orders, 0, newOrders, 4000);
+}
   

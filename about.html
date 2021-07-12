@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sat³ | Home</title>
+  <title>Sat³ | About</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="author" content="tiz314"/>
@@ -22,20 +22,20 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand ms-lg-4" href="#">Sat<span id="titleNumber">³</span></a>
+      <a class="navbar-brand ms-lg-4" href="index.html">Sat<span id="titleNumber">³</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-0 ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="products.html">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="#">About</a>
           </li>
           <li class="nav-item ms-lg-4 me-lg-4">
             <a class="nav-link" href="login.html">Login</a>
@@ -44,60 +44,14 @@
       </div>
     </div>
   </nav>
-  <main class="d-flex align-items-center">
-    <div class="container-fluid p-lg-0 title">
-          <h1>Sat<span id="titleNumber">³</span></h1>
-          <div class="p-2"><h3>Making space more accessible for everyone</h3></div>
-          <a href="#secondHome">
-            <svg class="arrows">
-              <path class="a1" d="M0 0 L30 32 L60 0"></path>
-              <path class="a2" d="M0 20 L30 52 L60 20"></path>
-              <path class="a3" d="M0 40 L30 72 L60 40"></path>
-            </svg>
-          </a>
-    </div>
-  </main>
-  <div class="container mt-5" id="secondHome">
-
-    <div class="row mb-lg-5">
-      
-      <div class="col-lg-7 p-3">
-        <p>
-          CubeSats are today's best tools to put your project into orbit, either you are a startup or a University. Sat³ products are perfect for LEO and SSO orbits. 
-          You will be able to send your custom satellite in space, in months.
-        </p>
-      </div>
-      <div class="col-lg-5 p-3 text-center">
-        <img src="./assets/media/cube1.jpg" alt="cube1" class="img-fluid">
-      </div>
-    
-    </div>
-
-    <div class="row mt-lg-5">
-      
-      <div class="col-lg-5 p-3 text-center">
-        <img src="./assets/media/cube2.png" alt="cube2" id="cube2" class="img-fluid">
-      </div>
-      <div class="col-lg-7 p-3">
-        <p>Today, you can place an order for your custom CubeSat, whose characteristics would be perfectly suited for your instruments and experiments.</p>
-      </div>
-    
-    </div>
-  
-  </div>
-  <div class="container-fluid p-lg-4 bg-dark" id="thirdHome">
-    <div class="row p-lg-5 mt-lg-5 text-center">
-      <div class="col p-5 data border-end-1">
-        <p id="launched"></p>
-        <p>Satellites deployed</p>
-      </div>
-      <div class="col p-5 data">
-        <p id="orders"></p>
-        <p>New orders</p>
-      </div>
-    </div>
-    <div class="p-lg-5 mt-lg-5 text-center">
-      <a href="products.html" class="p-lg-3" id="orderNow">Order now</a>
+  <div class="d-flex align-items-center main">
+    <div class="container-fluid p-lg-0 text-center" id="infoAbout">
+        <img src="./assets/media/logo.png" alt="logo" class="img-fluid" id="aboutLogo">
+        <p class=>Sat³ was born in 2015. It is a company which aims to the main goal: making the space more accessible for everyone, but most importantly, more affordable. 
+          For many years the space exploration has been classified as a field only accessible to big companies and space agencies, but now this is no longer true. With sat³, 
+          even small companies and organizations, such as startups and universities can send to space their own satellite. We can also assist you in the building by giving you
+          customer support. 
+          For contact information, <a href="https://github.com/tiz314" target="_blank">click here</a>.</p>
     </div>
   </div>
   <footer class="container-fluid bg-dark">
@@ -122,7 +76,6 @@
         <p>Fork on <a href="https://github.com/tiz314" target="_blank"><img src="./assets/media/github.png" alt="GitHub" id="githubLogo"></a></p>
       </div>
     </div>
-
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="./assets/script.js"></script>
