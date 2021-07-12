@@ -23,13 +23,29 @@
   <div class="d-flex align-items-center main bg-dark">
     <div class="container p-lg-0">
         <div class="container">
-            <form action="action_page.php">
-          
+            <form action="#">
+              
+              <label for="format">Satellite format</label>
+              <select id="format" name="format">
+                <option value="1u">1U</option>
+                <option value="2u">2U</option>
+                <option value="3u">3U</option>
+                <option value="4u">4U</option>
+                <option value="5u">5U</option>
+                <option value="6u">6U</option>
+              </select>
+
+              <label for="fname">Scope</label>
+              <input type="text" id="fname" name="use" placeholder="Weather, ham...">
+
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="First name">
+              <input type="text" id="fname" name="firstname">
           
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Last name">
+              <input type="text" id="lname" name="lastname">
+
+              <label for="fname">Email</label>
+              <input type="text" id="fname" name="email">
           
               <label for="country">Country</label>
               <select id="country" name="country">
@@ -40,7 +56,7 @@
               </select>
           
               <label for="subject">description</label>
-              <textarea id="subject" name="subject" placeholder="Describe your requirements" style="height:200px"></textarea>
+              <textarea id="subject" name="subject" placeholder="Describe your requirements, including all the instruments that will be on board" style="height:200px"></textarea>
           
               <input type="submit" value="Submit">
           
