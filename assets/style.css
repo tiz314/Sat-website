@@ -4,7 +4,11 @@
 }
 
 body{
-    background-color: #253237;
+    background-color: #141a26;
+    background-image: radial-gradient(#253237 1%, transparent 3%),
+        radial-gradient(#253237 1%, transparent 1%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
 }
 
 .navbar{
@@ -44,11 +48,17 @@ main {
     color: #e0fbfc;
     font-size: 1.4rem;
     text-align: justify;
-
 }
 
 #secondHome img{
     width: 25rem;
+}
+
+#thirdHome{
+    background-image: radial-gradient(#253237 1%, transparent 3%),
+        radial-gradient(#253237 1%, transparent 1%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
 }
 
 #cube2{

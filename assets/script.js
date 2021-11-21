@@ -1,3 +1,5 @@
+let done = false;
+
 function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
@@ -18,7 +20,10 @@ newOrders = 984;
 
 
 window.onscroll = function() {
-  animateValue(launched, 0, satLaunched, 4000);
-  animateValue(orders, 0, newOrders, 4000);
+  if (!done){
+    animateValue(launched, 0, satLaunched, 1500);
+    animateValue(orders, 0, newOrders, 1500);
+    done = true;
+  }
 }
   
